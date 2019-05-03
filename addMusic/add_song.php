@@ -57,6 +57,7 @@ function add_song() {
     $music_file_path = $music_target_dir . basename($_FILES['musicFile']['name']);
     $music_type = pathinfo($music_file_path, PATHINFO_EXTENSION);
     $file_dest = "/var/www/html/" . $music_file_path;
+    $image_dest = "/var/www/html/images/songs/";
     if($music_type != "mp3") {
         $error = 'Error: song file MUST be a .mp3 file.';
         require "song_form.php";
@@ -74,9 +75,10 @@ function add_song() {
         $isImage = true;
     }
     $image_file_path = 'images/songs/default.png'; // default file path for image
+    $image_file_ptr = "images/songs/default.png";
     if ($isImage) {
         $image_target_dir = "images/songs/";
-        $image_file_path = $image_target_dir . basename($_FILES['imageFile']['name']);
+        $image_file_path = $image_dest . basename($_FILES['imageFile']['name']);
         $image_type = pathinfo($image_file_path, PATHINFO_EXTENSION);
         if($image_type != 'png' && $image_type != 'jpg' && $image_type != 'PNG') {
             $error = 'Error: image file MUST be a .png or .jpg file.';
@@ -95,11 +97,12 @@ function add_song() {
         exit;
     }
     if ($isImage) {
-        if(!move_uploaded_file($_FILES['imageFile']['tmp_name'], '../' . $image_file_path)) {
+        if(!move_uploaded_file($_FILES['imageFile']['tmp_name'], $image_file_path)) {
             $error = "Error: unable to upload image file.\n";
             require "song_form.php";
             exit;
         }
+        $image_file_ptr = "images/songs/" . $_FILES['imageFile']['name'];
     }
         
     $title = $mysqli->real_escape_string($title);
@@ -107,6 +110,8 @@ function add_song() {
     $genre = $mysqli->real_escape_string($genre);
     $category = $mysqli->real_escape_string($category);
     $addedBy = $mysqli->real_escape_string($addedBy);
+    $music_file_path = $mysqli->real_escape_string($music_file_path);
+    $image_file_path = $mysqli->real_escape_string($image_file_ptr);
     $query = "INSERT INTO songs (title, artist, genre, decade, category, addedBy, 
     filepath, imagepath, addDate) values ('$title', '$artist', '$genre', '$decade', '$category',
     '$addedBy', '$music_file_path', '$image_file_path', now());";

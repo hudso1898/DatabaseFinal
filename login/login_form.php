@@ -3,7 +3,7 @@
 Edited and expanded by Matt Hudson -hudso- for CS2830 Fall '17 Final Project -->
 <html>
 <head>
-	<title>Login - ΦΜΑ Music </title>
+	<title>Login</title>
 	<link href="../app.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="../jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">

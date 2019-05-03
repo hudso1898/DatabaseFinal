@@ -17,7 +17,7 @@ else {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add Song - ΦΜΑ Music </title>
+	<title>Add Song</title>
 	<link href="../app.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="../jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">

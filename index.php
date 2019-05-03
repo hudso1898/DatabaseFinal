@@ -11,7 +11,7 @@
 <html lang=en>
 <head>
     <meta charset="UTF-8">
-    <title>ΦΜΑ Zeta Music Library</title>
+    <title>Hudson Music Library</title>
     <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/dark-hive/jquery-ui.css" />
     <!-- <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"> -->
@@ -140,7 +140,7 @@
     </head>
 <body onload="menuReady()">
     <?php $fromRequired = true; require "navigation.php"; ?>
-    <h1>ΦΜΑ Zeta Chapter Digital Music Library</h1>
+    <h1>Matt Hudson's Digital Music Library</h1>
     <div class="musicWrapper">
     <div class="musicMenu">
     <?php require_once 'music_menu.php'; ?>

@@ -13,7 +13,7 @@ print "
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Search User - ΦΜΑ Music </title>
+	<title>View Users</title>
 	<link href='app.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
     <link href='jquery-ui-1.12.1.custom/jquery-ui.min.css' rel='stylesheet' type='text/css'>
@@ -59,7 +59,7 @@ print "
         }
 
     print "</div>
-    <a class='back' href='http://ec2-52-15-151-188.us-east-2.compute.amazonaws.com/FinalProject/'>Back</a>
+    <a class='back' href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com'>Back</a>
 </body>
 </html>";
 ?>

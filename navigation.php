@@ -18,18 +18,18 @@ if(!$fromRequired) {
         if(!$loggedIn) {
             $username = null;
             print "<a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/createAccount/'>Create Account</a>
-            <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/login/'>Login</a>";
+            <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/login/'>Login</a>
+            ";
         }
         else {
             $username = $_SESSION['username'];
             print "<a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/addMusic/'>Add Music</a>
-            <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/logout.php'>Logout</a>";
+            <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/logout.php'>Logout</a>
+            <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/updatePassword'>Update Password</a>";
             print "<a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/users.php'>View Users</a>";
         }
         if($username != null) print "<div>Welcome <b>" . $username . "</b></div>";
         ?>
     <a href="http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/searchUser/">Search Users</a>
-    <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/aboutSinfonia/'>About ΦΜΑ</a>
-    <a href="http://missouri.sinfonia.org/">Zeta Chapter</a>
-    <a href="https://www.sinfonia.org"><img src='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/images/coatOfArms.png' alt='ΦΜΑ'></a>
+    
     </div>
