@@ -27,9 +27,11 @@ if(!$fromRequired) {
             <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/logout.php'>Logout</a>
             <a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/updatePassword'>Update Password</a>";
             print "<a href='http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/users.php'>View Users</a>";
+            print '<a href="http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/deleteUser.php">DELETE USER</a>';
         }
         if($username != null) print "<div>Welcome <b>" . $username . "</b></div>";
         ?>
     <a href="http://ec2-3-16-213-5.us-east-2.compute.amazonaws.com/searchUser/">Search Users</a>
+    
     
     </div>
