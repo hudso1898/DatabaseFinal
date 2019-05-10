@@ -29,7 +29,6 @@ The user can also delete their user account permanently.
 The application also allows anyone (logged in or not) to search for a user. If logged in, a user can view all users at once as well.
     
     Database Schema:
-    
     table users:
       varchar[256] username not null unique primary key;
       varchar[256] password; // (encrypted using php hash function unsalted)
@@ -51,13 +50,13 @@ The application also allows anyone (logged in or not) to search for a user. If l
       varchar[256] filepath; // path to the associate mp3 file for this song is located
       varchar[256] imagepath; // path to the associated image for this song is located
     
+    
 Here is how it meets the project requirements:
+
+
      - utilizes more than one table. The database aspect of the project uses the database 'songapp' which has two tables: songs and passwords.
      The songs table is used to store information regarding the songs that are uploaded to the application.
      The users table is used to store user information.
-     
-     
-     
      
     - The tables must be normalized (BCNF is the goal). The tables are normalized since redundant information is not stored in either table.
     
@@ -74,6 +73,10 @@ Here is how it meets the project requirements:
     them from a library consisting of all uploads from all users.
     -is not trivial. The application is not trivial, as it involves a lot of error checking, navigation and database functions.
     
+# ERD
+
+![ERD](https://github.com/hudso1898/DatabaseFinal/Song+Library+ERD.png "Song Library ERD")
+
 # Video Demonstration
 https://youtu.be/ysncr31SIh8
 
