@@ -75,7 +75,7 @@ Here is how it meets the project requirements:
     
 # ERD
 
-![ERD](https://github.com/hudso1898/DatabaseFinal/Song+Library+ERD.png "Song Library ERD")
+![ERD]https://github.com/hudso1898/DatabaseFinal/blob/master/songlibraryerd.PNG "Song Library ERD")
 
 # Video Demonstration
 https://youtu.be/ysncr31SIh8
